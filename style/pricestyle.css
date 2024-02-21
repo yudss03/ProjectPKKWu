@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url(style.css);
 
 * {
   margin: 0;
@@ -18,15 +19,8 @@ body {
   background-color: var(--third-color);
 }
 
-:root {
-  --main-color: #5c8bc2;
-  --secondary-color: black;
-  --third-color: #f3f2ed;
-}
-
 .hero-content {
   display: flex;
-  justify-content: center;
   margin-top: 70px;
 }
 
@@ -37,25 +31,28 @@ body {
 }
 
 .hero-content p {
-  width: 30%;
-  margin-right: 150px;
+  position: relative;
+  width: 50%;
   margin-top: 120px;
   word-spacing: 0.5px;
   justify-content: center;
   font-size: 18px;
   font-weight: 200;
   text-align: justify;
+  left: 180px;
 }
 
 .hero-content img {
+  position: relative;
+  right: 180px;
   width: 30%;
-  height: auto;
 }
 
 .btn-pesan-price {
-  position: absolute;
-  bottom: 170px;
-  left: 180px;
+  position: relative;
+  height: 50px;
+  top: 20px;
+  left: 170px;
   padding: 10px;
   border-radius: 20px;
   background-color: var(--main-color);
@@ -69,8 +66,10 @@ body {
 }
 
 .price-container {
+  position: relative;
   height: auto;
   display: flex;
+  left: 40px;
   margin-bottom: 100px;
   margin-top: 10px;
 }
@@ -113,8 +112,8 @@ td {
   width: 25%;
   height: 200px;
   position: relative;
-  top: 260px;
-  left: 200px;
+  top: 200px;
+  left: 260px;
   padding: 20px;
   background-color: var(--main-color);
   border: solid 1px var(--secondary-color);

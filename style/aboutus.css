@@ -1,0 +1,61 @@
+@import url(style.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.aboutus-container {
+  background-color: var(--main-color);
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutus-container h1 {
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+}
+
+.aboutus-container p {
+    width: 70%;
+    align-self: center;
+}
+
+.image-container {
+  background-color: var(--third-color);
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  gap: 150px;
+  padding-bottom: 100px;
+}
+
+.image-container .image-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container .image-content span {
+  position: relative;
+  font-size: 20px;
+}
+
+.image-container img {
+  width: 20rem;
+}
+
+.image-container span {
+  position: absolute;
+}

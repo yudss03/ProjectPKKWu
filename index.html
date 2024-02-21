@@ -11,7 +11,7 @@
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <title>JOKI LAUNDRY - HOME</title>
   </head>
   <body>
@@ -24,36 +24,32 @@
 
         <div class="navbar-menu">
           <li><a>HOME</a></li>
-          <li><a>ABOUT US</a></li>
+          <li><a href="aboutus.html">ABOUT US</a></li>
           <li><a href="price.html">PRICE LIST</a></li>
-          <li><a>FAQ</a></li>
+          <li><a href="faq.html">FAQ</a></li> 
         </div>
 
-        <div class="navbar-sign-in-up">
-          <div class="navbar-signin">
-            <a href="loginpage/login.html">Sign In</a>
+          <div class="navbar-sign-in-up">
+            <div class="navbar-signin">
+              <a href="loginpage/login.html">Sign In</a>
+            </div>
+            
+            <div class="navbar-signup">
+              <a href="loginpage/register.html">Sign Up</a>
+            </div>
           </div>
-
-          <div class="navbar-signup">
-            <a href="loginpage/register.html">Sign Up</a>
+          
+          <div class="navbar-burger">
+            <span class="button"><i class="fa-solid fa-bars"></i></span>
           </div>
         </div>
-
-        <div class="navbar-burger">
-          <span><i class="fa-solid fa-bars"></i></span>
-        </div>
-      </div>
-    </header>
+      </header>
 
     <section class="hero">
       <div class="container-home">
-        <div class="left-home">
-          <div class="background-left">
-            <h1>JOKI LAUNDRY</h1>
-            <h3>Hemat waktu, Hemat tenaga, Hemat biaya.</h3>
-            <button class="btn-pesan">Pesan Sekarang</button>
-          </div>
-        </div>
+        <h1>BUAT HARIMU LEBIH SIMPEL DENGAN JOKI LAUNDRY</h1>
+        <h3>Hemat waktu, Hemat tenaga, Hemat biaya.</h3>
+        <button class="btn-pesan">Pesan Sekarang</button>
       </div>
     </section>
 
@@ -61,30 +57,42 @@
     <div class="service-list">
       <div class="top-list">
         <buttton class="list">
-          <img src="img/weighing-machine.png" alt="#" />
-          <span>Laundry Kiloan</span>
+          <a href="price.html">
+            <img src="img/weighing-machine.png" alt="#" />
+            <span>Laundry Kiloan</span>
+          </a>
         </buttton>
         <button class="list">
-          <img src="img/t-shirt.png" alt="#" />
-          <span class="">Laundry Kaos</span>
+          <a href="price.html">
+            <img src="img/t-shirt.png" alt="#" />
+            <span class="">Laundry Kaos</span>
+          </a>
         </button>
         <button class="list">
-          <img src="img/sneakers.png" alt="#" />
-          <span>Laundry Sepatu</span>
+          <a href="price.html">
+            <img src="img/sneakers.png" alt="#" />
+            <span>Laundry Sepatu</span>
+          </a>
         </button>
       </div>
       <div class="bottom-list">
         <button class="list">
-          <img src="img/sofa.png" alt="" />
-          <span>Laundry Sofa</span>
+          <a href="price.html">
+            <img src="img/sofa.png" alt="" />
+            <span>Laundry Sofa</span>
+          </a>
         </button>
         <button class="list">
-          <img src="img/carpet.png" alt="" />
-          <span>Laundry Karpet</span>
+          <a href="price.html">
+            <img src="img/carpet.png" alt="" />
+            <span>Laundry Karpet</span>
+          </a>
         </button>
         <button class="list">
-          <img src="img/helmet.png" alt="" />
-          <span>Laundry Helm</span>
+          <a href="price.html">
+            <img src="img/helmet.png" alt="" />
+            <span>Laundry Helm</span>
+          </a>
         </button>
       </div>
     </div>
@@ -101,15 +109,14 @@
             ipsam, suscipit expedita aperiam explicabo perspiciatis officia non
             assumenda vel quis, voluptate recusandae voluptas illum libero dolor
             ex? Nostrum soluta, facere reiciendis consequatur, vero tempora,
-            doloremque numquam totam rem saepe incidunt.</span
-          >
+            doloremque numquam totam rem saepe incidunt.</span>
         </div>
         <div class="aboutus-image">
           <img src="img/laundry-aboutus.jpg" alt="" />
         </div>
       </div>
       <button class="aboutus-pesan">
-        <span>Pesan Sekarang ></span>
+        <a href="aboutus.html">Selengkapnya..</a>
       </button>
     </div>
 
@@ -124,7 +131,7 @@
             <img src="img/laptop.png" alt="order" />
           </div>
           <h2>Online Order</h2>
-          <span>Pesan melalui website kami dan beberapa informasi</span>
+          <span>Pesan melalui website kami dan dapatkan beberapa informasi</span>
         </div>
         <div class="whyus-content">
           <div class="whyus-image">
@@ -138,15 +145,21 @@
             <img src="img/trust.png" alt="trust" />
           </div>
           <h2>Terpercaya</h2>
-          <span>Terpercaya kinerjanya, selalu melakukan seusai SOP yangberlaku</span>
+          <span
+            >Terpercaya kinerjanya, selalu melakukan seusai SOP
+            yang berlaku</span
+          >
         </div>
       </div>
     </div>
-    <hr>
+    <hr />
     <div class="slogan">
-      <h1><strong>Mudahkan kehidupan sehari-hari Anda dengan Joki Laundry </strong></h1>
+      <h1>
+        <strong
+          >Mudahkan kehidupan sehari-hari Anda dengan Joki Laundry
+        </strong>
+      </h1>
     </div>
-
 
     <!-- FOOTER -->
     <footer>
@@ -187,6 +200,6 @@
     </div>
 
     <!--JS SCRIPT-->
-    <script href="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
