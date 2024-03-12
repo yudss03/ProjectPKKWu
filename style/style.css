@@ -159,16 +159,23 @@ body {
 }
 
 .container-home h1 {
-  position: relative;
-  width: 70%;
+  width: 80%;
   color: var(--secondary-color);
-  font-size: 48px;
+  font-size: 5rem;
   bottom: 30px;
-  left: 15%;
+  line-height: 5rem;
+  margin: auto;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.container-home h1 span {
+  color: var(--third-color);
 }
 
 .container-home h3 {
-  font-weight: 100;
+  font-weight: 200;
+  font-size: 1.8rem;
   margin-bottom: 20px;
 }
 
@@ -213,7 +220,6 @@ body {
 
 .lists .list {
   display: flex;
-  height: 10rem;
   align-items: center;
   padding: 1rem 7%;
   border-radius: 1.2rem;
@@ -314,17 +320,17 @@ body {
 
 .whyus-wrapper .whyus-image {
   background-color: var(--main-color);
-  width: 10rem;
-  height: 10rem;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
-  margin: auto;
+  width: 15rem;
+  height: 15rem;
+  margin: auto auto;
   border-radius: 50%;
 }
 
 .whyus-wrapper .whyus-image img {
-  width: 7rem;
+  width: 10rem;
 }
 
 .whyus-wrapper h2 {
@@ -464,6 +470,83 @@ footer {
 }
 /* FOOTER END */
 
+/* MODAL SECTION START */
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+}
+
+.modal-container {
+  width: 80%;
+  height: auto;
+  position: relative;
+  margin: auto auto;
+  padding: 3rem 7%;
+  border-radius: 1.2rem;
+  border: 2px solid var(--third-color);
+  background-color: var(--main-color);
+  animation: animationModal .3s;
+}
+
+.modal .close-btn {
+  position: absolute;
+  top: -20px;
+  left: 98%;
+  background-color: var(--main-color);
+  padding: 0.5rem 1rem;
+  color: var(--third-color);
+  font-size: 1.6rem;
+  border: 2px solid var(--third-color);
+  border-radius: 50%;
+}
+
+.modal h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1.8rem;
+  color: var(--third-color);
+}
+
+.modal .modal-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+.modal img {
+  width: 20rem;
+}
+
+.modal-content li {
+  font-size: 1.5rem;
+  color: var(--third-color);
+}
+
+.modal-content button {
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: var(--main-color);
+  border: 1px solid var(--third-color);
+  border-radius: 1.2rem;
+  color: var(--third-color);
+  transition: .3s linear;
+}
+
+.modal-content button:hover {
+  background-color: var(--third-color);
+  color: var(--main-color);
+}
+
+/* MODAL SECTION END */
+
 /* RESPONSIVE CODE */
 /* LAPTOP */
 @media (max-width: 1366px) {
@@ -530,11 +613,26 @@ footer {
     flex-wrap: wrap;
   }
 
+  .modal .modal-wrapper {
+    flex-wrap: wrap;
+  }
+
 }
 
 /* MOBILE */
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+}
+
+/* ANIMATION SECTION */
+@keyframes animationModal {
+  from {
+    top: -300px;
+    opacity: 0;
+  } to {
+    top: 0;
+    opacity: 100%;
   }
 }
