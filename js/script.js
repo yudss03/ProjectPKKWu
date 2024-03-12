@@ -4,7 +4,7 @@ const menuToggle = document.querySelector('.navbar-burger i');
 const nav = document.querySelector('.navbar-menu');
 
 menuToggle.addEventListener('click', function() {
-    nav.classList.toggle('slide');
+    nav.classList.toggle('active');
 });
 
 // FAQ
@@ -15,4 +15,5 @@ faqs.forEach(faq => {
     faq.addEventListener("click", ()=> {
         faq.classList.toggle('active');
     })
-})
+});
+
