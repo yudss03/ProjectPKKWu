@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joki Laundry</title>
+    <link rel="stylesheet" href="style/payment.css" />
+</head>
+<body>
+       
+    
+    <div class="form-container" id="kiloan" style="display: none;">
+
+        <h2>Joki Laundry <br>Kiloan</h2>
+        <form action="" id="form">
+            <div class="form-group">
+                <input type="text" id="nama" name="nama" placeholder="Nama anda" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="nohp" name="nohp" placeholder="Nomor HP anda" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="alamat" name="alamat" placeholder="Alamat lengkap anda" required>
+            </div>
+            <p style="font-size: 10px; color : gray; margin : 20px 10px;">Note : Data anda tidak akan dibagikan kepada siapapun</p>
+       
+            <button type="submit" class="payButton1" id="1">Bayar</button>
+        </form>
+    </div>
+
+    <div class="form-container" id="kaos" style="display: none;">
+
+        <h2>Joki Laundry <br> Kaus</h2>
+        <form action="" id="form">
+            <div class="form-group">
+                <input type="text" id="nama" name="nama" placeholder="Nama anda" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="nohp" name="nohp" placeholder="Nomor HP anda" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="alamat" name="alamat" placeholder="Alamat lengkap anda" required>
+            </div>
+            <p style="font-size: 10px; color : gray; margin : 20px 10px;">Note : Data anda tidak akan dibagikan kepada siapapun</p>
+       
+            <button type="submit" class="payButton2" id="1">Bayar</button>
+        </form>
+    </div>
+
+    <div class="form-container" id="sepatu" style="display: none;">
+
+        <h2>Joki Laundry <br> Sepatu</h2>
+        <form action="" id="form">
+            <div class="form-group">
+                <input type="text" id="nama" name="nama" placeholder="Nama anda" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="nohp" name="nohp" placeholder="Nomor HP anda" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="alamat" name="alamat" placeholder="Alamat lengkap anda" required>
+            </div>
+            <p style="font-size: 10px; color : gray; margin : 20px 10px;">Note : Data anda tidak akan dibagikan kepada siapapun</p>
+       
+            <button type="submit" class="payButton3" id="1">Bayar</button>
+        </form>
+    </div>
+
+    <div class="form-container" id="sofa" style="display: none;">
+
+        <h2>Joki Laundry <br>Sofa</h2>
+        <form action="" id="form">
+            <div class="form-group">
+                <input type="text" id="nama" name="nama" placeholder="Nama anda" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="nohp" name="nohp" placeholder="Nomor HP anda" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="alamat" name="alamat" placeholder="Alamat lengkap anda" required>
+            </div>
+            <p style="font-size: 10px; color : gray; margin : 20px 10px;">Note : Data anda tidak akan dibagikan kepada siapapun</p>
+       
+            <button type="submit" class="payButton4" id="1">Bayar</button>
+        </form>
+    </div>
+
+    <div class="form-container" id="karpet" style="display: none;">
+
+        <h2>Joki Laundry <br> Karpet</h2>
+        <form action="" id="form">
+            <div class="form-group">
+                <input type="text" id="nama" name="nama" placeholder="Nama anda" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="nohp" name="nohp" placeholder="Nomor HP anda" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="alamat" name="alamat" placeholder="Alamat lengkap anda" required>
+            </div>
+            <p style="font-size: 10px; color : gray; margin : 20px 10px;">Note : Data anda tidak akan dibagikan kepada siapapun</p>
+       
+            <button type="submit" class="payButton5" id="1">Bayar</button>
+        </form>
+    </div>
+
+
+    <div class="form-container" id="helmet" style="display: none;">
+
+        <h2>Joki Laundry <br>Helm </h2>
+        <form action="" id="form">
+            <div class="form-group">
+                <input type="text" id="nama" name="nama" placeholder="Nama anda" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="nohp" name="nohp" placeholder="Nomor HP anda" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="alamat" name="alamat" placeholder="Alamat lengkap anda" required>
+            </div>
+            <p style="font-size: 10px; color : gray; margin : 20px 10px;">Note : Data anda tidak akan dibagikan kepada siapapun</p>
+       
+            <button type="submit" class="payButton6" id="1">Bayar</button>
+        </form>
+    </div>
+
+    <script >
+        const id = sessionStorage.getItem('id');
+        const forms = document.querySelectorAll('.form-selector');
+
+
+        if (id === 'kiloan'){
+            forms.forEach(element => {
+            element.style.display = 'none'; });
+            document.getElementById(id).style.display = "flex";
+            const button = document.querySelector('.payButton1')
+            button.addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = "https://app.sandbox.midtrans.com/payment-links/1718211367534";
+            });
+            
+            
+        } else if (id === 'kaos'){
+            forms.forEach(element => {
+            element.style.display = 'none';
+            });
+            document.getElementById(id).style.display = "flex";
+            const button = document.querySelector('.payButton2')
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                window.location.href = "https://app.sandbox.midtrans.com/payment-links/1718213964109";
+            });
+        } else if (id === 'sepatu'){
+            forms.forEach(element =>{
+                forms.style.display = "none";
+            })
+            document.getElementById(id).style.display = "flex";
+            const button = document.querySelector('.payButton3')
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                window.location.href = "https://app.sandbox.midtrans.com/payment-links/1718214084763";
+            });
+        } else if (id === 'sofa'){
+            forms.forEach(element =>{
+                forms.style.display = "none";
+            })
+            document.getElementById(id).style.display = "flex";
+            const button = document.querySelector('.payButton4')
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                window.location.href = "https://app.sandbox.midtrans.com/payment-links/1718214128624";
+            });
+        } else if (id === 'karpet'){
+            forms.forEach(element =>{
+                forms.style.display = "none";
+            })
+            document.getElementById(id).style.display = "flex";
+            const button = document.querySelector('.payButton5')
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                window.location.href = "https://app.sandbox.midtrans.com/payment-links/1718214195446";
+            });
+        } else if (id === 'helmet'){
+            forms.forEach(element =>{
+                forms.style.display = "none";
+            })
+            document.getElementById(id).style.display = "flex";
+            const button = document.querySelector('.payButton6')
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                window.location.href = "https://app.sandbox.midtrans.com/payment-links/1718214254127";
+            });
+        }
+        
+
+    </script>
+</body>
+</html>
